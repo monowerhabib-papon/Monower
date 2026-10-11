@@ -1,0 +1,241 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Md Monower Habib | Textile Engineer</title>
+<meta name="description" content="Textile Engineer (Wet Process Engineering) focused on dyeing, finishing, and cutting cost, time and resource use in knit production.">
+<link rel="icon" href="data:image/svg+xml,<svg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 100 100'><text y='.9em' font-size='90'>🧵</text></svg>">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,500;9..144,700&family=Instrument+Sans:wght@400;500;600&display=swap" rel="stylesheet">
+<style>
+:root{
+  --paper:#F6F8FA; --ink:#15192B; --muted:#555B70; --indigo:#26338F; --indigo-deep:#1B2468;
+  --line:#D9DDE8; --white:#fff;
+  --serif:"Fraunces",Georgia,serif; --sans:"Instrument Sans",system-ui,-apple-system,"Segoe UI",sans-serif;
+}
+*{box-sizing:border-box;margin:0}
+html{scroll-behavior:smooth}
+body{background:var(--paper);color:var(--ink);font:17px/1.65 var(--sans);-webkit-font-smoothing:antialiased}
+a{color:var(--indigo)}
+a:focus-visible,.btn:focus-visible{outline:3px solid var(--indigo);outline-offset:3px}
+.wrap{max-width:1000px;margin:0 auto;padding:0 24px}
+
+nav{position:sticky;top:0;background:rgba(246,248,250,.92);backdrop-filter:blur(8px);border-bottom:1px solid var(--line);z-index:5}
+nav .wrap{display:flex;gap:22px;align-items:center;height:56px;overflow-x:auto;white-space:nowrap}
+nav strong{font-family:var(--serif);margin-right:auto;font-size:18px}
+nav a{text-decoration:none;color:var(--muted);font-size:15px;font-weight:500}
+nav a:hover{color:var(--indigo)}
+
+.hero{padding:64px 0 48px}
+.hero .wrap{display:grid;grid-template-columns:1.5fr 1fr;gap:48px;align-items:center}
+h1{font-family:var(--serif);font-weight:700;font-size:clamp(40px,6vw,64px);line-height:1.05;letter-spacing:-.02em}
+.role{font-size:20px;color:var(--indigo);font-weight:600;margin:14px 0 20px}
+.hero p.lead{max-width:56ch;color:#2b3047}
+.btns{display:flex;flex-wrap:wrap;gap:12px;margin-top:28px}
+.btn{display:inline-block;padding:12px 22px;border-radius:999px;font-weight:600;text-decoration:none;font-size:16px;border:2px solid var(--indigo)}
+.btn.primary{background:var(--indigo);color:#fff}
+.btn.primary:hover{background:var(--indigo-deep)}
+.btn.ghost{color:var(--indigo)}
+.btn.ghost:hover{background:#E7EAF8}
+.portrait{justify-self:center;width:100%;max-width:340px;aspect-ratio:4/5;border-radius:170px 170px 18px 18px;overflow:hidden;background:#fff;border:6px solid var(--indigo);box-shadow:12px 12px 0 var(--indigo-deep)}
+.portrait img{width:100%;height:100%;object-fit:cover;object-position:center 20%;display:block}
+
+/* shade card: the one memorable element */
+.shades{display:flex;height:44px;margin-top:8px}
+.shades span{flex:1;position:relative;background:var(--c)}
+.shades span::after{content:attr(data-n);position:absolute;left:8px;bottom:6px;font-size:11px;font-weight:600;color:var(--t,#fff);opacity:.9}
+.shade-cap{font-size:13px;color:var(--muted);padding:8px 0 0}
+
+section{padding:56px 0 8px}
+h2{font-family:var(--serif);font-size:32px;letter-spacing:-.01em;margin-bottom:28px;padding-bottom:12px;border-bottom:3px solid var(--indigo)}
+.job{display:grid;grid-template-columns:190px 1fr;gap:12px 32px;padding:22px 0;border-bottom:1px solid var(--line)}
+.job:last-child{border-bottom:0}
+.when{color:var(--muted);font-size:15px;font-weight:500}
+.job h3{font-size:19px;line-height:1.3}
+.org{color:var(--muted);margin-bottom:10px}
+ul{padding-left:20px}
+li{margin:6px 0;max-width:68ch}
+
+.feature{background:var(--indigo-deep);color:#fff;border-radius:18px;padding:36px;margin-top:8px}
+.feature h3{font-family:var(--serif);font-size:26px;line-height:1.25;margin-bottom:6px}
+.feature .sub{color:#C9D0FF;margin-bottom:24px;max-width:62ch}
+.stats{display:grid;grid-template-columns:repeat(3,1fr);gap:16px;margin-bottom:26px}
+.stat{border-top:2px solid #6F7DE0;padding-top:10px}
+.stat b{display:block;font-family:var(--serif);font-size:38px;line-height:1.1}
+.stat small{color:#C9D0FF;font-size:14px}
+.feature ul{color:#EEF0FF}
+.feature a{color:#fff;font-weight:600}
+
+.edu div{display:flex;justify-content:space-between;gap:16px;flex-wrap:wrap;padding:14px 0;border-bottom:1px solid var(--line)}
+.edu span{color:var(--muted)}
+.cols{display:grid;grid-template-columns:1fr 1fr;gap:12px 48px}
+.skills p{margin-bottom:16px;max-width:70ch}
+.skills b{display:block;margin-bottom:2px}
+.tags{display:flex;flex-wrap:wrap;gap:8px}
+.tags span{background:#E7EAF8;color:var(--indigo-deep);padding:5px 13px;border-radius:999px;font-size:15px;font-weight:500}
+
+.contact{background:var(--ink);color:#fff;margin-top:64px;padding:56px 0 40px}
+.contact h2{border-color:#6F7DE0}
+.contact a{color:#fff}
+.contact dl{display:grid;grid-template-columns:110px 1fr;gap:10px 16px}
+.contact dt{color:#A9B0D6}
+.contact small{display:block;margin-top:36px;color:#8F96BC}
+
+@media (max-width:760px){
+  body{font-size:16px}
+  .hero{padding-top:36px}
+  .hero .wrap{grid-template-columns:1fr;gap:36px}
+  .portrait{max-width:260px;order:-1;justify-self:start}
+  .job{grid-template-columns:1fr;gap:2px}
+  .stats,.cols{grid-template-columns:1fr}
+  .feature{padding:24px}
+  .shades span::after{display:none}
+}
+@media (prefers-reduced-motion:reduce){html{scroll-behavior:auto}}
+</style>
+</head>
+<body>
+
+<nav><div class="wrap">
+  <strong>Monower Habib</strong>
+  <a href="#experience">Experience</a><a href="#project">Project</a><a href="#education">Education</a><a href="#more">Leadership</a><a href="#skills">Skills</a><a href="#contact">Contact</a>
+</div></nav>
+
+<header class="hero"><div class="wrap">
+  <div>
+    <h1>Md Monower Habib</h1>
+    <p class="role">Textile Engineer, Wet Process Engineering</p>
+    <p class="lead">Textile Engineering graduate (B.Sc., 2026) and Champion of Textile Talent Hunt 9.0, with hands-on experience across knit dyeing, finishing and garment assembly in Bangladesh's leading factories. I cut process time and steam consumption through data-driven improvement, and I lead with a hands-on, take-ownership mindset.</p>
+    <div class="btns">
+      <a class="btn primary" href="Monower_Habib_CV.pdf" download>Download CV</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+  </div>
+  <div class="portrait"><img src="photo.jpg" alt="Portrait of Md Monower Habib" width="700" height="859"></div>
+</div></header>
+
+<div class="wrap" aria-hidden="true">
+  <div class="shades">
+    <span style="--c:#F2EFE6;--t:#555" data-n="White"></span>
+    <span style="--c:#E7B9C4;--t:#5a2a38" data-n="Light"></span>
+    <span style="--c:#7F8FD8" data-n="Medium"></span>
+    <span style="--c:#26338F" data-n="Dark"></span>
+    <span style="--c:#15192B" data-n="Deep"></span>
+  </div>
+  <p class="shade-cap">Shade card: white, light, medium and dark shades are the ones my steam-saving project worked on.</p>
+</div>
+
+<main class="wrap">
+
+<section id="experience">
+  <h2>Experience</h2>
+
+  <div class="job">
+    <div class="when">Aug – Sept 2026</div>
+    <div>
+      <h3>Intern Trainee</h3>
+      <p class="org">Epyllion Group, Bangladesh</p>
+      <ul>
+        <li>Mapped the end-to-end production flow at <b>Epyllion Textile Division</b>, from yarn receiving and circular knitting to dyeing, mechanical/chemical finishing and industrial washing, to identify bottlenecks affecting Quality, Cost and Delivery (QCD).</li>
+        <li>Designed a recipe in ORGATEX, dyed 5 kg of fabric on a Fongs machine (sample) and matched the shade with a spectrophotometer.</li>
+        <li>Tracked the full garment lifecycle at <b>Epyllion Style Ltd.</b> (fabric spreading, cutting, sewing lines, embellishment, final packing) across production lines.</li>
+        <li>Co-developed a product with garment technologists in the PDC department, translating design requirements into manufacturing output.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Oct 2025 – May 2026</div>
+    <div>
+      <h3>Research Assistant</h3>
+      <p class="org">Bangladesh University of Textiles</p>
+      <ul>
+        <li>Pioneered an eco-friendly non-aqueous dyeing process using a reverse micelle system, aiming to eliminate water discharge in textile processing.</li>
+        <li>Ran controlled dyeing on more than 180 trials on a Datacolor Ahiba IR lab machine, applying rigorous experimental discipline and data analysis.</li>
+      </ul>
+    </div>
+  </div>
+
+  <div class="job">
+    <div class="when">Apr 2023 – Dec 2025</div>
+    <div>
+      <h3>Chemistry Instructor</h3>
+      <p class="org">Udvash Academic and Admission Care</p>
+      <ul>
+        <li>Taught chemistry to admission aspirant students over 2.5 years, building their problem-solving techniques.</li>
+        <li>Managed a demanding teaching schedule alongside full-time university studies.</li>
+      </ul>
+    </div>
+  </div>
+</section>
+
+<section id="project">
+  <h2>Featured project</h2>
+  <div class="feature">
+    <h3>Champion, Textile Talent Hunt 9.0</h3>
+    <p class="sub">Innovation project at Alliance Knit Composite Ltd (AKCL): reducing steam consumption in 100% cotton S/J fabric (white and dark shades) through an optimized combination of NaOH and hydrogen peroxide in pretreatment.</p>
+    <div class="stats">
+      <div class="stat"><b>6%</b><small>less steam, dark and medium colors</small></div>
+      <div class="stat"><b>12%</b><small>less steam, light colors</small></div>
+      <div class="stat"><b>~1 cr</b><small>estimated saving per year</small></div>
+    </div>
+    <ul>
+      <li>Led a literature review and data analysis to pinpoint steam-consumption hotspots in cotton pretreatment.</li>
+      <li>Implemented an alternative chemical that shortened process time and reached the target shade more efficiently.</li>
+      <li>Audited the full dyeing and finishing line (Sclavos, Fongs, MCS, Thies, Brazzouli) and applied an advanced method to reach the desired scouring shade.</li>
+      <li>Analyzed operational energy data and showed that Whiteness Index and Absorbency are non-critical for light-shade dyeing, avoiding unnecessary process cost.</li>
+    </ul>
+    <!-- Add your project links here, e.g. <p><a href="URL">Link</a> · <a href="URL">Document</a></p> -->
+  </div>
+</section>
+
+<section id="education" class="edu">
+  <h2>Education</h2>
+  <div><strong>B.Sc. in Textile Engineering (Wet Process Engineering), Bangladesh University of Textiles</strong><span>Graduating 2026 | CGPA 3.26</span></div>
+  <div><strong>HSC, Dhaka College</strong><span>2021 | GPA 5.00 / 5.00</span></div>
+  <div><strong>SSC, Ideal School &amp; College</strong><span>2019 | GPA 5.00 / 5.00</span></div>
+</section>
+
+<section id="more">
+  <h2>Leadership &amp; development</h2>
+  <ul>
+    <li>Led teams to <b>2nd Runner-Up</b> (Hult Prize BUTEX 2022) and <b>Finalist</b> (Hult Prize BUTEX 2024) in business case competitions, pitching under tight deadlines.</li>
+    <li>Organized the <b>Butex-ITET DyeChem Expo 2026</b>, the first chemical exhibition on the Butex campus, showcasing 33 chemical companies.</li>
+    <li>Graduated from the Aspire Leaders Program, Aspire Institute (June 2026).</li>
+    <li>Represented Ideal Debating Club and Dhaka College Debating Society.</li>
+    <li>Completed Lean Six Sigma White Belt (LSSWB) certification.</li>
+    <li>Completed "Factory Skills Development in Knit Dyeing &amp; Finishing" (Textile Today), CRISAT Level 1 training, and "Digitalizing Textile Sustainability with Sattva."</li>
+  </ul>
+</section>
+
+<section id="skills" class="skills">
+  <h2>Skills &amp; languages</h2>
+  <p><b>Technical</b></p>
+  <div class="tags" style="margin-bottom:22px">
+    <span>Knit dyeing &amp; finishing</span><span>Process optimization &amp; QCD</span><span>Lean Six Sigma (White Belt)</span><span>Energy &amp; resource efficiency</span><span>Quality control</span><span>Sustainability</span><span>Lab dyeing</span><span>MS Office</span><span>Data analysis</span>
+  </div>
+  <p><b>Core strengths</b></p>
+  <div class="tags" style="margin-bottom:22px">
+    <span>Analytical problem-solving</span><span>Resilience under pressure</span><span>Rapid adaptability</span><span>Hands-on leadership</span><span>Stakeholder communication</span><span>Regular factory travel</span>
+  </div>
+  <p><b>Languages</b>Bengali (native) | English (professional)</p>
+</section>
+
+</main>
+
+<footer class="contact" id="contact"><div class="wrap">
+  <h2>Contact</h2>
+  <dl>
+    <dt>Email</dt><dd><a href="mailto:monowerhabib.p@gmail.com">monowerhabib.p@gmail.com</a></dd>
+    <dt>Phone</dt><dd><a href="tel:+8801518900795">+880 1518 900795</a></dd>
+    <dt>LinkedIn</dt><dd><a href="https://linkedin.com/in/monowerhabibpapon">linkedin.com/in/monowerhabibpapon</a></dd>
+    <dt>Location</dt><dd>Dhaka, Bangladesh</dd>
+    <dt>CV</dt><dd><a href="Monower_Habib_CV.pdf" download>Download as PDF</a></dd>
+  </dl>
+  <small>© 2026 Md Monower Habib</small>
+</div></footer>
+
+</body>
+</html>
